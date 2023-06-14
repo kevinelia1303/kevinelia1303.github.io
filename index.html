@@ -134,6 +134,36 @@
           </div>
         </div>
       </div>
+      <section id="players">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col"><h2>Players</h2></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="players-box">
+                <h4 class="players-name">Haaland</h4>
+                <img class="players-img" src="img/Gallery/zlatan.png" alt="zlatan" />
+                <a href="#" class="btn btn-light players-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="players-box">
+                <h4 class="players-name">Mbappe</h4>
+                <img class="players-img" src="img/Gallery/mbape.png" alt="mbape" />
+                <a href="#" class="btn btn-light players-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="players-box">
+                <h4 class="players-name">Mane</h4>
+                <img class="players-img" src="img/Gallery/Ronaldo.png" alt="Ronaldo" />
+                <a href="#" class="btn btn-light players-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -293,6 +323,14 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".players-box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
