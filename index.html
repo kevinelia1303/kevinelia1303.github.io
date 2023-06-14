@@ -6,6 +6,8 @@
     <title>My Portfolio | Kevin Elia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
@@ -40,7 +42,7 @@
     <section class="jumbotron text-center">
       <img src="img/aaa.png" alt="Kevin Elia" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Kevin Elia</h1>
-      <p class="lead">College Student | Web Developer</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -53,20 +55,22 @@
 
     <!-- About -->
     <section id="about">
-      <div class="row">
-        <div class="col text-center mb-3">
-          <h2>About Me</h2>
+      <div class="container">
+        <div class="row text-center mb-3" data-aos="fade-down">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse ipsum nostrum eligendi tempore iste omnis corporis doloribus. Quas inventore assumenda odit! Ducimus, rem officia! Temporibus mollitia minima voluptatem
-            modi?
-          </p>
-        </div>
-        <div class="col-md-4">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint veritatis sequi sed commodi tempore, velit reprehenderit saepe. Nobis voluptatibus dolorum facilis, inventore earum perspiciatis!</p>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse ipsum nostrum eligendi tempore iste omnis corporis doloribus. Quas inventore assumenda odit! Ducimus, rem officia! Temporibus mollitia minima voluptatem
+              modi?
+            </p>
+          </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint veritatis sequi sed commodi tempore, velit reprehenderit saepe. Nobis voluptatibus dolorum facilis, inventore earum perspiciatis!</p>
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -89,7 +93,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500">
               <img src="img/bbb.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,7 +101,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
               <img src="img/ccc.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,7 +109,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
               <img src="img/ddd.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -113,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
               <img src="img/bbb.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -121,7 +125,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400">
               <img src="img/bbb.jpg" class="card-img-top" alt="Project1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -139,6 +143,36 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/business-3d-young-women-standing.png" class="img-fluid gallery-img" alt="" />
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/3d-business-man-and-woman-at-work.png" class="img-fluid gallery-img" alt="" />
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/Gallery/3d-business-man-and-woman-working-at-the-table.png" class="img-fluid gallery-img" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -191,6 +225,49 @@
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 2,
+        delay: 1.5,
+        text: "College Student | Web Developer",
+      });
+      gsap.from(".jumbotron img", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "bounce",
+        rotateY: 360,
+      });
+      gsap.from(".navbar", {
+        duration: 1.5,
+        y: "-100%",
+        opacity: 0,
+      });
+      gsap.from(".display-4", {
+        duration: 1,
+        y: "-50",
+        opacity: 0,
+        delay: 0.5,
+        ease: "back",
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwW7xjt9PLIfg9c_2p0iTF8VLJFq2NSbRa8aNjEYmjitqbWuk15NXYZd38_zllYAyi2rA/exec";
